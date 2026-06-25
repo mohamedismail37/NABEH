@@ -113,7 +113,7 @@ The current MVP includes AI-powered attention detection, automated exam generati
 
 #### AI Model:
 ##### Demo Video
-🎥 [Watch the Demo Video]([https://drive.google.com/file/d/FILE_ID/view](https://drive.google.com/file/d/1yLtVxfWuwEwObxnHRVgh0UFp6Uz7eVuE/view?usp=sharing))
+🎥 [Watch the Demo Video](https://drive.google.com/file/d/1yLtVxfWuwEwObxnHRVgh0UFp6Uz7eVuE/view?usp=sharing)
 
 ### Screenshots
 You can place all screenshots inside a `/assets` folder
