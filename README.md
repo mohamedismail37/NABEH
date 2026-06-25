@@ -120,6 +120,10 @@ You can place all screenshots inside a `/assets` folder
 
 ---
 
+## Architecture & Database Design
+
+📄 [NABEH Smart-Education-Assist Proposal](assets/NABEH_Smart-Education-Assist_Proposal.pdf)
+
 ### Database Design
 - SQL Server database with **19 normalized tables**
 - Proper use of:
@@ -129,7 +133,7 @@ You can place all screenshots inside a `/assets` folder
 - Designed following **database normal forms (1NF → 3NF)**
 
 ### Database Schema
-📄 [Project Documentation](Backend/db_relationSchema.pdf)
+📄 [Project relation schema](Backend/db_relationSchema.pdf)
 
 ---
 ## Technical Highlights
