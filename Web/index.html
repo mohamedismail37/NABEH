@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NABEH - Smart Education Assist | منصة نابة للتعليم الذكي - منصة تعليمية ذكية لتحسين تفاعل الطلاب وفعالية التدريس باستخدام الذكاء الاصطناعي">
+    <title>NABEH | نابة - Smart Education Assist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo" id="logo">
+                <img src="LOGO white_theme.png.png" alt="NABEH Logo" class="logo-light" id="logo-light">
+                <img src="Logo dark_theme.png.png" alt="NABEH Logo" class="logo-dark" id="logo-dark">
+            </a>
+            <nav class="nav" id="main-nav">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="nav-link active" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link" data-ar="عن المشروع" data-en="About">عن المشروع</a></li>
+                    <li><a href="#features" class="nav-link" data-ar="المميزات" data-en="Features">المميزات</a></li>
+                    <li><a href="#pricing" class="nav-link" data-ar="الباقات" data-en="Pricing">الباقات</a></li>
+                    <li><a href="#register" class="nav-link" data-ar="التسجيل" data-en="Register">التسجيل</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Toggle Language">
+                    <span class="lang-text" id="lang-text">EN</span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <path
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+        </div>
+        <!-- Particle Canvas -->
+        <canvas class="hero-particles" id="hero-canvas"></canvas>
+        <!-- Animated Grid -->
+        <div class="hero-grid"></div>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <div class="hero-badge fade-in" data-ar="منصة تعليمية ذكية بالذكاء الاصطناعي"
+                    data-en="AI-Powered Smart Education Platform">
+                    <span class="badge-dot"></span>
+                    <span>منصة تعليمية ذكية بالذكاء الاصطناعي</span>
+                </div>
+                <h1 class="hero-title fade-in" data-delay="100">
+                    <span data-ar="مساعد التعليم" data-en="Smart Education">مساعد التعليم</span><br>
+                    <span class="gradient-text" data-ar="الذكي" data-en="Assist">الذكي</span>
+                </h1>
+                <p class="hero-desc fade-in" data-delay="200"
+                    data-ar="منصة تعليمية ذكية مصممة لتحسين تفاعل الطلاب وتعزيز فعالية التدريس باستخدام تقنيات الذكاء الاصطناعي المتقدمة. نرتقي بالتعليم إلى آفاق جديدة."
+                    data-en="An intelligent educational platform designed to improve student engagement and enhance teaching effectiveness using advanced AI technologies. Elevating education to new horizons.">
+                    منصة تعليمية ذكية مصممة لتحسين تفاعل الطلاب وتعزيز فعالية التدريس باستخدام تقنيات الذكاء الاصطناعي
+                    المتقدمة. نرتقي بالتعليم إلى آفاق جديدة.
+                </p>
+                <div class="hero-buttons fade-in" data-delay="300">
+                    <a href="#register" class="btn btn-primary" data-ar="احجز مقعدك الآن" data-en="Book Your Spot Now">
+                        <span>احجز مقعدك الآن</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                            height="20">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn btn-secondary" data-ar="اكتشف المزيد" data-en="Learn More">
+                        <span>اكتشف المزيد</span>
+                    </a>
+                </div>
+                <div class="hero-stats fade-in" data-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="95">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label" data-ar="دقة التتبع" data-en="Tracking Accuracy">دقة التتبع</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="24">0</span><span class="stat-suffix">/7</span>
+                        <span class="stat-label" data-ar="مراقبة مستمرة" data-en="24/7 Monitoring">مراقبة مستمرة</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label" data-ar="مؤسسة تعليمية" data-en="Institutions">مؤسسة تعليمية</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image fade-in" data-delay="200">
+                <!-- Floating Icon Badges -->
+                <div class="hero-float-badge hero-float-1">
+                    <div class="float-badge-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="float-badge-info">
+                        <span class="float-badge-value">92%</span>
+                        <span class="float-badge-label" data-ar="نسبة الحضور" data-en="Attendance">نسبة الحضور</span>
+                    </div>
+                    <div class="float-badge-pulse"></div>
+                </div>
+                <div class="hero-float-badge hero-float-2">
+                    <div class="float-badge-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                            <path d="M9 19V6l12-3v13M9 19c0 1.1-1.343 2-3 2s-3-.9-3-2 1.343-2 3-2 3 .9 3 2Z"/>
+                        </svg>
+                    </div>
+                    <div class="float-badge-info">
+                        <span class="float-badge-value">85%</span>
+                        <span class="float-badge-label" data-ar="تفاعل الطلاب" data-en="Engagement">تفاعل الطلاب</span>
+                    </div>
+                    <div class="float-badge-pulse"></div>
+                </div>
+                <div class="hero-float-badge hero-float-3">
+                    <div class="float-badge-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                            <path d="M12 2L2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="float-badge-info">
+                        <span class="float-badge-value">AI</span>
+                        <span class="float-badge-label" data-ar="ذكاء اصطناعي" data-en="Powered">ذكاء اصطناعي</span>
+                    </div>
+                    <div class="float-badge-pulse"></div>
+                </div>
+                <div class="hero-float-badge hero-float-4">
+                    <div class="float-badge-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <div class="float-badge-info">
+                        <span class="float-badge-value">88%</span>
+                        <span class="float-badge-label" data-ar="معدل التسليم" data-en="Submission">معدل التسليم</span>
+                    </div>
+                    <div class="float-badge-pulse"></div>
+                </div>
+                <!-- Image + glow + rings -->
+                <div class="hero-image-wrapper">
+                    <img src="hero.png" alt="NABEH Dashboard" id="hero-img">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-ring hero-ring-1"></div>
+                    <div class="hero-ring hero-ring-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-ar="عن المشروع" data-en="About The Project">عن المشروع</span>
+                <h2 class="section-title" data-ar="تعليم أذكى بتقنيات المستقبل"
+                    data-en="Smarter Education with Future Technologies">تعليم أذكى بتقنيات المستقبل</h2>
+                <p class="section-subtitle"
+                    data-ar="نابة هي منصة تعليمية ذكية مصممة لتحسين تفاعل الطلاب وتعزيز فعالية التدريس باستخدام الذكاء الاصطناعي"
+                    data-en="NABEH is an intelligent educational platform designed to improve student engagement and enhance teaching effectiveness using artificial intelligence">
+                    نابة هي منصة تعليمية ذكية مصممة لتحسين تفاعل الطلاب وتعزيز فعالية التدريس باستخدام الذكاء الاصطناعي
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card fade-in" data-delay="100">
+                    <div class="about-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"
+                            height="32">
+                            <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path d="M12 4c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8Z" />
+                            <path d="M2 12h2M20 12h2M12 2v2M12 20v2" />
+                        </svg>
+                    </div>
+                    <h3 data-ar="تتبع العين والوجه" data-en="Face & Eye Tracking">تتبع العين والوجه</h3>
+                    <p data-ar="استخدام الرؤية الحاسوبية لتتبع حركة العين والوجه لقياس مستوى انتباه الطلاب أثناء المحاضرات المباشرة والافتراضية"
+                        data-en="Using computer vision for face and eye tracking to measure student attention levels during online and physical lectures">
+                        استخدام الرؤية الحاسوبية لتتبع حركة العين والوجه لقياس مستوى انتباه الطلاب أثناء المحاضرات
+                        المباشرة والافتراضية</p>
+                </div>
+                <div class="about-card fade-in" data-delay="200">
+                    <div class="about-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"
+                            height="32">
+                            <path
+                                d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2ZM21 16c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2Z" />
+                        </svg>
+                    </div>
+                    <h3 data-ar="تحليل البيانات السلوكية" data-en="Behavioral Data Analysis">تحليل البيانات السلوكية
+                    </h3>
+                    <p data-ar="تحليل الأنماط السلوكية للطلاب وتقديم تقارير مفصلة حول مستويات التفاعل والمشاركة لتحسين جودة التعليم"
+                        data-en="Analyzing student behavioral patterns and providing detailed reports on engagement and participation levels to improve education quality">
+                        تحليل الأنماط السلوكية للطلاب وتقديم تقارير مفصلة حول مستويات التفاعل والمشاركة لتحسين جودة
+                        التعليم</p>
+                </div>
+                <div class="about-card fade-in" data-delay="300">
+                    <div class="about-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"
+                            height="32">
+                            <path d="M12 2L2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 data-ar="نتائج تفاعل فورية" data-en="Real-Time Engagement Scores">نتائج تفاعل فورية</h3>
+                    <p data-ar="توفير درجات تفاعل فورية في الوقت الحقيقي تساعد المعلمين على فهم مستوى انتباه الطلاب واتخاذ إجراءات فورية لتحسين التجربة التعليمية"
+                        data-en="Providing real-time engagement scores that help teachers understand student attention levels and take immediate actions to improve the learning experience">
+                        توفير درجات تفاعل فورية في الوقت الحقيقي تساعد المعلمين على فهم مستوى انتباه الطلاب واتخاذ
+                        إجراءات فورية لتحسين التجربة التعليمية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-ar="المميزات" data-en="Features">المميزات</span>
+                <h2 class="section-title" data-ar="كل ما تحتاجه لتعليم أفضل"
+                    data-en="Everything You Need for Better Education">كل ما تحتاجه لتعليم أفضل</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in" data-delay="100">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"
+                            height="28">
+                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <h3 data-ar="مراقبة التفاعل في الوقت الحقيقي" data-en="Real-Time Engagement Monitoring">مراقبة
+                        التفاعل في الوقت الحقيقي</h3>
+                    <p data-ar="راقب تفاعل طلابك لحظة بلحظة مع بيانات دقيقة وتحليلات فورية لتحسين تجربة التعلم"
+                        data-en="Monitor your students' engagement moment by moment with accurate data and instant analytics to improve the learning experience">
+                        راقب تفاعل طلابك لحظة بلحظة مع بيانات دقيقة وتحليلات فورية لتحسين تجربة التعلم</p>
+                    <span class="feature-tag" data-ar="الأكثر شعبية" data-en="Most Popular">الأكثر شعبية</span>
+                </div>
+                <div class="feature-card fade-in" data-delay="200">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"
+                            height="28">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                            <path d="M6 8h.01M9 8h.01" />
+                        </svg>
+                    </div>
+                    <h3 data-ar="لوحة تحكم المعلم" data-en="Teacher Dashboard">لوحة تحكم المعلم</h3>
+                    <p data-ar="لوحة تحكم شاملة تمنح المعلمين رؤية كاملة لأداء الطلاب مع تقارير مفصلة وإحصائيات دقيقة"
+                        data-en="A comprehensive dashboard giving teachers complete visibility into student performance with detailed reports and accurate statistics">
+                        لوحة تحكم شاملة تمنح المعلمين رؤية كاملة لأداء الطلاب مع تقارير مفصلة وإحصائيات دقيقة</p>
+                </div>
+                <div class="feature-card fade-in" data-delay="300">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"
+                            height="28">
+                            <path d="M9 11l3 3L22 4" />
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                        </svg>
+                    </div>
+                    <h3 data-ar="اختبارات تلقائية بعد المحاضرة" data-en="Automated Post-Lecture Quizzes">اختبارات
+                        تلقائية بعد المحاضرة</h3>
+                    <p data-ar="إنشاء اختبارات قصيرة تلقائياً بعد كل محاضرة لقياس مدى استيعاب الطلاب وتعزيز عملية التعلم"
+                        data-en="Automatically generate short quizzes after each lecture to measure student comprehension and reinforce the learning process">
+                        إنشاء اختبارات قصيرة تلقائياً بعد كل محاضرة لقياس مدى استيعاب الطلاب وتعزيز عملية التعلم</p>
+                </div>
+                <div class="feature-card fade-in" data-delay="400">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28"
+                            height="28">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8Z" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <h3 data-ar="تقارير وتحليلات شاملة" data-en="Comprehensive Reports & Analytics">تقارير وتحليلات
+                        شاملة</h3>
+                    <p data-ar="احصل على تقارير مفصلة حول أداء الطلاب ومستويات التفاعل مع رسوم بيانية واضحة وسهلة الفهم"
+                        data-en="Get detailed reports on student performance and engagement levels with clear, easy-to-understand charts and graphs">
+                        احصل على تقارير مفصلة حول أداء الطلاب ومستويات التفاعل مع رسوم بيانية واضحة وسهلة الفهم</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-ar="الباقات والأسعار" data-en="Plans & Pricing">الباقات والأسعار</span>
+                <h2 class="section-title" data-ar="اختر الباقة المناسبة لمؤسستك"
+                    data-en="Choose the Right Plan for Your Institution">اختر الباقة المناسبة لمؤسستك</h2>
+            </div>
+            <div class="pricing-grid">
+                <!-- Pro Plan -->
+                <div class="pricing-card fade-in" data-delay="100">
+                    <div class="pricing-header">
+                        <span class="plan-name" data-ar="برو" data-en="Pro">برو</span>
+                        <div class="plan-price">
+                            <span class="currency" data-ar="$" data-en="$">$</span>
+                            <span class="amount">49</span>
+                            <span class="period" data-ar="/شهرياً" data-en="/month">/شهرياً</span>
+                        </div>
+                        <p class="plan-desc" data-ar="مثالي للمدارس الصغيرة والمتوسطة"
+                            data-en="Perfect for small to medium schools">مثالي للمدارس الصغيرة والمتوسطة</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li data-ar="حتى 100 طالب" data-en="Up to 100 students">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>حتى 100 طالب</span>
+                        </li>
+                        <li data-ar="مراقبة التفاعل الأساسية" data-en="Basic engagement monitoring">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>مراقبة التفاعل الأساسية</span>
+                        </li>
+                        <li data-ar="تقارير أسبوعية" data-en="Weekly reports">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>تقارير أسبوعية</span>
+                        </li>
+                        <li data-ar="لوحة تحكم معلم واحد" data-en="Single teacher dashboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>لوحة تحكم معلم واحد</span>
+                        </li>
+                        <li data-ar="دعم عبر البريد الإلكتروني" data-en="Email support">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>دعم عبر البريد الإلكتروني</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-plan" data-ar="اختر الباقة" data-en="Select Plan">اختر الباقة</button>
+                </div>
+                <!-- Premium Plan -->
+                <div class="pricing-card featured fade-in" data-delay="200">
+                    <div class="pricing-badge" data-ar="الأكثر شعبية" data-en="Most Popular">الأكثر شعبية</div>
+                    <div class="pricing-header">
+                        <span class="plan-name" data-ar="بريميوم" data-en="Premium">بريميوم</span>
+                        <div class="plan-price">
+                            <span class="currency" data-ar="$" data-en="$">$</span>
+                            <span class="amount">99</span>
+                            <span class="period" data-ar="/شهرياً" data-en="/month">/شهرياً</span>
+                        </div>
+                        <p class="plan-desc" data-ar="الخيار الأفضل للمؤسسات التعليمية"
+                            data-en="Best choice for educational institutions">الخيار الأفضل للمؤسسات التعليمية</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li data-ar="حتى 500 طالب" data-en="Up to 500 students">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>حتى 500 طالب</span>
+                        </li>
+                        <li data-ar="مراقبة تفاعل متقدمة مع AI" data-en="Advanced AI engagement monitoring">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>مراقبة تفاعل متقدمة مع AI</span>
+                        </li>
+                        <li data-ar="تقارير يومية وتحليلات" data-en="Daily reports and analytics">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>تقارير يومية وتحليلات</span>
+                        </li>
+                        <li data-ar="لوحات تحكم متعددة للمعلمين" data-en="Multiple teacher dashboards">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>لوحات تحكم متعددة للمعلمين</span>
+                        </li>
+                        <li data-ar="اختبارات تلقائية بعد المحاضرة" data-en="Automated post-lecture quizzes">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>اختبارات تلقائية بعد المحاضرة</span>
+                        </li>
+                        <li data-ar="دعم فني على مدار الساعة" data-en="24/7 technical support">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>دعم فني على مدار الساعة</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary btn-plan" data-ar="اختر الباقة" data-en="Select Plan">اختر
+                        الباقة</button>
+                </div>
+                <!-- Plus Plan -->
+                <div class="pricing-card fade-in" data-delay="300">
+                    <div class="pricing-header">
+                        <span class="plan-name" data-ar="بلس" data-en="Plus">بلس</span>
+                        <div class="plan-price">
+                            <span class="currency" data-ar="$" data-en="$">$</span>
+                            <span class="amount">199</span>
+                            <span class="period" data-ar="/شهرياً" data-en="/month">/شهرياً</span>
+                        </div>
+                        <p class="plan-desc" data-ar="للجامعات والمؤسسات الكبيرة"
+                            data-en="For universities and large institutions">للجامعات والمؤسسات الكبيرة</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li data-ar="عدد غير محدود من الطلاب" data-en="Unlimited students">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>عدد غير محدود من الطلاب</span>
+                        </li>
+                        <li data-ar="جميع مميزات بريميوم" data-en="All Premium features">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>جميع مميزات بريميوم</span>
+                        </li>
+                        <li data-ar="تكامل API مخصص" data-en="Custom API integration">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>تكامل API مخصص</span>
+                        </li>
+                        <li data-ar="مدير حساب مخصص" data-en="Dedicated account manager">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>مدير حساب مخصص</span>
+                        </li>
+                        <li data-ar="تدريب فريق العمل" data-en="Staff training">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                            <span>تدريب فريق العمل</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-plan" data-ar="اختر الباقة" data-en="Select Plan">اختر الباقة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="section register" id="register">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag" data-ar="تسجيل المؤسسة" data-en="Institution Registration">تسجيل
+                    المؤسسة</span>
+                <h2 class="section-title" data-ar="سجّل مؤسستك الآن واحجز مقعدك"
+                    data-en="Register Your Institution & Book Your Spot">سجّل مؤسستك الآن واحجز مقعدك</h2>
+                <p class="section-subtitle"
+                    data-ar="أكمل النموذج أدناه لتسجيل مؤسستك التعليمية والبدء في الاستفادة من منصة نابة"
+                    data-en="Complete the form below to register your educational institution and start benefiting from NABEH platform">
+                    أكمل النموذج أدناه لتسجيل مؤسستك التعليمية والبدء في الاستفادة من منصة نابة</p>
+            </div>
+            <div class="register-wrapper fade-in" data-delay="200">
+                <form class="register-form" id="register-form" novalidate>
+                    <div class="form-section">
+                        <h3 class="form-section-title" data-ar="معلومات المؤسسة" data-en="Institution Information">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
+                                height="22">
+                                <path
+                                    d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16M3 21h18M9 7h1M9 11h1M14 7h1M14 11h1M9 15h6v6H9z" />
+                            </svg>
+                            <span>معلومات المؤسسة</span>
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="inst-type" data-ar="نوع المؤسسة" data-en="Institution Type">نوع
+                                    المؤسسة</label>
+                                <select id="inst-type" name="institutionType" required>
+                                    <option value="" data-ar="اختر نوع المؤسسة" data-en="Select Institution Type">اختر
+                                        نوع المؤسسة</option>
+                                    <option value="school" data-ar="مدرسة" data-en="School">مدرسة</option>
+                                    <option value="university" data-ar="جامعة" data-en="University">جامعة</option>
+                                    <option value="institution" data-ar="مؤسسة تعليمية"
+                                        data-en="Educational Institution">مؤسسة تعليمية</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inst-name" data-ar="اسم المؤسسة" data-en="Institution Name">اسم
+                                    المؤسسة</label>
+                                <input type="text" id="inst-name" name="institutionName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inst-country" data-ar="بلد المؤسسة" data-en="Institution Country">بلد
+                                    المؤسسة</label>
+                                <input type="text" id="inst-country" name="institutionCountry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inst-email" data-ar="بريد المؤسسة الإلكتروني"
+                                    data-en="Institution Email">بريد المؤسسة الإلكتروني</label>
+                                <input type="email" id="inst-email" name="institutionEmail" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="inst-logo" data-ar="شعار المؤسسة" data-en="Institution Logo">شعار
+                                    المؤسسة</label>
+                                <div class="file-upload" id="file-upload-area">
+                                    <input type="file" id="inst-logo" name="institutionLogo" accept="image/*" hidden>
+                                    <div class="file-upload-content">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            width="32" height="32">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" />
+                                        </svg>
+                                        <p data-ar="اسحب الملف هنا أو اضغط للاختيار"
+                                            data-en="Drag file here or click to browse">اسحب الملف هنا أو اضغط للاختيار
+                                        </p>
+                                        <span data-ar="PNG, JPG, SVG (حد أقصى 5MB)"
+                                            data-en="PNG, JPG, SVG (max 5MB)">PNG, JPG, SVG (حد أقصى 5MB)</span>
+                                    </div>
+                                    <div class="file-preview" id="file-preview" style="display:none;">
+                                        <img id="preview-img" src="" alt="Preview">
+                                        <button type="button" class="file-remove" id="file-remove">&times;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h3 class="form-section-title" data-ar="معلومات المسؤول" data-en="Admin Information">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
+                                height="22">
+                                <path
+                                    d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+                            </svg>
+                            <span>معلومات المسؤول</span>
+                        </h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="admin-role" data-ar="المنصب / الدور" data-en="Admin Role / Title">المنصب /
+                                    الدور</label>
+                                <input type="text" id="admin-role" name="adminRole" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="admin-email" data-ar="البريد الإلكتروني للمسؤول"
+                                    data-en="Admin Email">البريد الإلكتروني للمسؤول</label>
+                                <input type="email" id="admin-email" name="adminEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="admin-password" data-ar="كلمة المرور" data-en="Admin Password">كلمة
+                                    المرور</label>
+                                <div class="password-wrapper">
+                                    <input type="password" id="admin-password" name="adminPassword" required
+                                        minlength="8">
+                                    <button type="button" class="password-toggle" id="password-toggle"
+                                        aria-label="Toggle Password Visibility">
+                                        <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" width="20" height="20">
+                                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                                            <circle cx="12" cy="12" r="3" />
+                                        </svg>
+                                        <svg class="eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" width="20" height="20">
+                                            <path
+                                                d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24M1 1l22 22" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" id="submit-btn" data-ar="سجّل واحجز مقعدك"
+                        data-en="Register & Book Your Spot">
+                        <span>سجّل واحجز مقعدك</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"
+                            height="20">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="LOGO white_theme.png.png" alt="NABEH Logo" class="logo-light footer-logo">
+                    <img src="Logo dark_theme.png.png" alt="NABEH Logo" class="logo-dark footer-logo">
+                    <p data-ar="منصة تعليمية ذكية تعمل بالذكاء الاصطناعي لتحسين تجربة التعلم والتدريس"
+                        data-en="An AI-powered smart educational platform to improve learning and teaching experiences">
+                        منصة تعليمية ذكية تعمل بالذكاء الاصطناعي لتحسين تجربة التعلم والتدريس</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#hero" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="#about" data-ar="عن المشروع" data-en="About">عن المشروع</a></li>
+                        <li><a href="#features" data-ar="المميزات" data-en="Features">المميزات</a></li>
+                        <li><a href="#pricing" data-ar="الباقات" data-en="Pricing">الباقات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <ul>
+                        <li><a href="mailto:info@nabeh.edu" data-ar="info@nabeh.edu"
+                                data-en="info@nabeh.edu">info@nabeh.edu</a></li>
+                        <li><a href="#register" data-ar="سجّل الآن" data-en="Register Now">سجّل الآن</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-ar="© 2025 NABEH - نابة. جميع الحقوق محفوظة." data-en="© 2025 NABEH. All Rights Reserved.">©
+                    2025 NABEH - نابة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22"
+                height="22">
+                <path d="M20 6L9 17l-5-5" />
+            </svg>
+            <span id="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
