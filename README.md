@@ -112,7 +112,7 @@ The current MVP includes AI-powered attention detection, automated exam generati
 | ![](assets/5Web4.png) | ![](assets/Web5.png) | 
 
 #### AI Model:
-<video src="mobile/NabehV.mp4" controls></video>
+<video src="Mobile/NabehV.mp4" controls></video>
 
 ### Screenshots
 You can place all screenshots inside a `/assets` folder
@@ -152,7 +152,7 @@ You can place all screenshots inside a `/assets` folder
 |---------|---------|
 | Name    | Mohamed Ismail |
 | Email   | mohamedismailfh@gmail.com |
-| LinkedIn| linkedin.com/in/mohamed-ismail-fh |
+| LinkedIn| https://www.linkedin.com/in/mohamed-ismail-fh |
 | GitHub  | https://github.com/mohamedismail37 |
 
 | Field   | Details |
